@@ -1,1 +1,7 @@
-# prisonerdilemmasimulator_java
+# A fogolydilemma lényege:
+Két bűnözőt letartóztatnak, bebörtönöznek, és mindenféle kommunikációt kizárnak kettejük között. Azonban a hatóságoknak nincs elegendő bizonyítékuk, hogy egy nemrégiben elkövetett bankrablást rájuk bizonyítsanak, ellenben kisebb törvénysértések miatt mindketten elítélhetők. A kihallgatást végző rendőr felajánlja, hogy ha tanúskodnak, a másik ellen szabadon elmehetnek és a másik 3 évet fog börtönben tölteni. Ha egyikük sem él ezzel a lehetőséggel, mindketten 1-1 év fogságot szabnak ki kettejükre viszont, ha mindketten elárulják a másikat, akkor 2-2 év büntetés vár rájuk. A kérdés: hogyan cselekedjenek a bűnözők?
+
+A program célja:
+Ennek a dilemmának egy speciális változatára ad választ a program, melyben két játékos kap 1-1 érmét és dönthetnek, hogy bedobják-e az előttük álló gépbe. Amennyiben bedobják (együttműködnek), a másik játékos kap 3 érmét és az ő érméjük elveszik. Azonban egyikük sem tudja, hogy a másik mit fog lépni. 
+
+A kérdés: hogyan lehet a lehető legtöbb érmét összegyűjteni? Mi a helyes taktika? A program Monte Carlo szimulációt használ ennek kiderítésére. Ennek lényege, hogy egy adott számú játékosokból álló bajnokságban, melyben az egyes játékosokat az általuk használt taktikával azonosítjuk, mindenki mindenkivel adott kört játszik. A forduló végén a legkevesebb ponttal rendelkezők kiesnek, helyüket pedig a legtöbb ponttal rendelkező típussal töltjük fel. Elegendő forduló lejátszása után, szélsőséges esetek kivételével, egy típusú játékosok maradnak. 
