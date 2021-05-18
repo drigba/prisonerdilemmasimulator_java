@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
+
+<Tab text="Rules" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tab3_controller" >
+<fx:define>
+<ArrayList fx:id="tab3_lablist">
+			<Label fx:id="tab3_label1" text="5" GridPane.columnIndex="1"
+				GridPane.hgrow="ALWAYS" GridPane.rowIndex="0">
+				<font>
+					<Font size="18.0" />
+				</font>
+				<GridPane.margin>
+					<Insets right="10.0" />
+				</GridPane.margin>
+			</Label>
+			<Label fx:id="tab3_label2" text="5" GridPane.columnIndex="1"
+				GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+				<font>
+					<Font size="18.0" />
+				</font>
+				<GridPane.margin>
+					<Insets right="10.0" />
+				</GridPane.margin>
+			</Label>
+			<Label fx:id="tab3_label3" text="0" GridPane.columnIndex="1"
+				GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+				<font>
+					<Font size="18.0" />
+				</font>
+				<GridPane.margin>
+					<Insets right="10.0" />
+				</GridPane.margin>
+			</Label>
+		</ArrayList>
+<ArrayList fx:id = "tab3_VBOX">
+<VBox alignment="CENTER_LEFT" GridPane.halignment="CENTER"
+									GridPane.valignment="CENTER" GridPane.rowIndex="0" fx:id = "VBox1">
+									<children>
+										<Text fx:id="text1" strokeType="OUTSIDE"
+											strokeWidth="0.0" text="Rounds played per match"
+											wrappingWidth="268.13671875">
+											<font>
+												<Font size="16.0" />
+											</font>
+											<VBox.margin>
+												<Insets bottom="10.0" />
+											</VBox.margin>
+										</Text>
+										<Slider fx:id="slider11" max="25.0" value="5.0"
+											onMouseDragged="#write1" onMouseClicked="#write1">
+											<VBox.margin>
+												<Insets right="20.0" />
+											</VBox.margin>
+										</Slider>
+									</children>
+								</VBox>
+								<VBox alignment="CENTER_LEFT" prefHeight="200.0"
+									prefWidth="100.0" GridPane.rowIndex="1" fx:id = "VBox2">
+									<children>
+										<Text fx:id="text2" strokeType="OUTSIDE"
+											strokeWidth="0.0" text="Eliminated and reproduced players" >
+											<font>
+												<Font size="16.0" />
+											</font>
+											<VBox.margin>
+												<Insets bottom="10.0" />
+											</VBox.margin>
+										</Text>
+										<Slider fx:id="slider21" max="10.0" value="5.0"
+											onMouseDragged="#write1" onMouseClicked="#write1">
+											<VBox.margin>
+												<Insets right="20.0" />
+											</VBox.margin>
+										</Slider>
+									</children>
+								</VBox>
+								<VBox alignment="CENTER_LEFT" prefHeight="200.0"
+									prefWidth="100.0" GridPane.rowIndex="2" fx:id = "VBox3">
+									<children>
+										<Text fx:id="text3" strokeType="OUTSIDE"
+											strokeWidth="0.0" text="Chance of mistake (%)">
+											<font>
+												<Font size="16.0" />
+											</font>
+											<VBox.margin>
+												<Insets bottom="10.0" />
+											</VBox.margin>
+										</Text>
+										<Slider fx:id="slider31" max="50.0" value="0.0"
+											onMouseDragged="#write1" onMouseClicked="#write1">
+											<VBox.margin>
+												<Insets right="20.0" />
+											</VBox.margin>
+										</Slider>
+									</children>
+								</VBox>
+
+</ArrayList>
+</fx:define>
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0"
+					prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<GridPane prefHeight="369.0" prefWidth="279.0"
+							style="-fx-background-color: transparent;"
+							AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0"
+							AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+							fx:id="tab3_grid">
+							<columnConstraints>
+								<ColumnConstraints hgrow="SOMETIMES"
+									maxWidth="558.0" minWidth="15.0" prefWidth="537.0" />
+								<ColumnConstraints halignment="LEFT"
+									hgrow="ALWAYS" maxWidth="291.0" minWidth="35.0"
+									prefWidth="70.0" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<fx:reference source="VBox1" />
+								<fx:reference source="VBox2" />
+								<fx:reference source="VBox3" />
+								<fx:reference source="tab3_label1" />
+								<fx:reference source="tab3_label2" />
+								<fx:reference source="tab3_label3" />
+							</children>
+							<padding>
+								<Insets bottom="45.0" />
+							</padding>
+						</GridPane>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+

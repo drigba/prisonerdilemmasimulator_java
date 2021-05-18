@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SingleController">
+   <children>
+      <ImageView fitHeight="290.0" fitWidth="435.0" layoutX="130.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gép.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="coopButton" layoutX="389.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#impressed" prefHeight="47.0" prefWidth="137.0" text="Cooperate" />
+      <Button fx:id="cheatButton" layoutX="137.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#impressed" prefHeight="47.0" prefWidth="137.0" text="Cheat" />
+      <Button fx:id="mainmenu" layoutX="539.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#change_menu" prefHeight="41.0" prefWidth="110.0" text="Back" />
+      <Button fx:id="startButton" layoutX="137.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="72.0" prefWidth="389.0" text="Start Game" />
+      <Label fx:id="OpponentLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="562.0" layoutY="374.0" prefHeight="47.0" prefWidth="65.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="PlayerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="374.0" prefHeight="47.0" prefWidth="65.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="endgamemessage" layoutX="141.0" layoutY="59.0" prefHeight="290.0" prefWidth="389.0" style="-fx-background-color: white; -fx-border-color: grey;" visible="false">
+         <children>
+            <Text layoutX="24.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End of game&#10;Your coins:&#10;Opponent coins:" textAlignment="CENTER" wrappingWidth="342.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="101.0" layoutX="39.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@e.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="110.0" layoutX="551.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kerdo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

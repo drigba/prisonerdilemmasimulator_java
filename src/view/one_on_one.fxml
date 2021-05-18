@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OvOController">
+   <children>
+      <ImageView fitHeight="290.0" fitWidth="435.0" layoutX="130.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gép.png" />
+         </image></ImageView>
+      <Button fx:id="mainmenu" layoutX="540.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#change_menu" prefHeight="41.0" prefWidth="110.0" text="Back" />
+      <Label fx:id="RightLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="563.0" layoutY="396.0" prefHeight="47.0" prefWidth="65.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LeftLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="396.0" prefHeight="47.0" prefWidth="65.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="startbutton" layoutX="268.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#startgame" prefHeight="47.0" prefWidth="139.0" text="Start" />
+      <ImageView fx:id="rightImgV" fitHeight="116.0" fitWidth="110.0" layoutX="533.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="leftImgV" fitHeight="116.0" fitWidth="110.0" layoutX="14.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="beforegamemessage" layoutX="131.0" prefHeight="366.0" prefWidth="389.0" style="-fx-background-color: white;">
+         <children>
+            <GridPane fx:id="leftgrid" hgap="50.0" layoutY="81.0" prefHeight="290.0" prefWidth="389.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" prefHeight="6.0" prefWidth="139.0" text="Copycat" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Alwayscheat" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Alwayscoop" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Grudger" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Simpleton" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Copykitten" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Whoknows" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" prefHeight="6.0" prefWidth="139.0" text="Copycat" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Alwayscheat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Alwayscoop" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Grudger" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Simpleton" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Copykitten" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#getTactic" text="Whoknows" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Text fx:id="text" layoutX="67.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the two players" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

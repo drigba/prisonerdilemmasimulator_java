@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
+
+
+<Tab text="Characters" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tab1_controller" >
+<fx:define>
+		<ArrayList fx:id="lablist">
+			<Label fx:id="label11" alignment="CENTER"
+				contentDisplay="CENTER" prefWidth="30.0" text="4"
+				GridPane.columnIndex="1" GridPane.halignment="CENTER"
+				GridPane.rowIndex="1" GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+			<Label fx:id="label21" alignment="CENTER"
+				contentDisplay="CENTER" prefHeight="17.0" prefWidth="18.0" text="4"
+				GridPane.columnIndex="1" GridPane.halignment="CENTER"
+				GridPane.rowIndex="2" GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+			<Label fx:id="label31" alignment="CENTER"
+				contentDisplay="CENTER" text="4" GridPane.columnIndex="1"
+				GridPane.halignment="CENTER" GridPane.rowIndex="3"
+				GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+			<Label fx:id="label41" alignment="CENTER"
+				contentDisplay="CENTER" text="4" GridPane.columnIndex="1"
+				GridPane.halignment="CENTER" GridPane.rowIndex="4"
+				GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+			<Label fx:id="label51" alignment="CENTER" text="4"
+				GridPane.columnIndex="1" GridPane.halignment="CENTER"
+				GridPane.rowIndex="5" GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+			<Label fx:id="label61" alignment="CENTER" text="4"
+				GridPane.columnIndex="1" GridPane.halignment="CENTER"
+				GridPane.rowIndex="6" GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+			<Label fx:id="label71" alignment="CENTER" text="4"
+				GridPane.columnIndex="1" GridPane.halignment="CENTER"
+				GridPane.rowIndex="7" GridPane.valignment="CENTER">
+				<GridPane.margin>
+					<Insets top="13.0" />
+				</GridPane.margin>
+				<font>
+					<Font size="15.0" />
+				</font>
+			</Label>
+		</ArrayList>
+		<ArrayList fx:id="slidelist">
+			<Slider fx:id="slider1" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+			<Slider fx:id="slider2" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+			<Slider fx:id="slider3" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+			<Slider fx:id="slider4" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+			<Slider fx:id="slider5" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+			<Slider fx:id="slider6" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+			<Slider fx:id="slider7" majorTickUnit="2.0" max="28.0"
+				minorTickCount="1" onMouseDragged="#writeO" onMouseClicked="#writeO"
+				value="4.0" />
+
+		</ArrayList>
+		</fx:define>
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <GridPane fx:id="gridPane" prefHeight="369.0" prefWidth="279.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="4.0" prefHeight="4.0" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="4.0" prefHeight="4.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox prefHeight="32.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <children>
+                        <Label fx:id="copy1" text="Copycat">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <fx:reference source="slider1" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="25.0" prefWidth="100.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="alwayscheat" text="Alwayscheat">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                       <fx:reference source="slider2" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="4.0" prefWidth="100.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="alwayscoop" text="Alwayscoop">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <fx:reference source="slider3" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="14.0" prefWidth="100.0" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="grudger" text="Grudger">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                       <fx:reference source="slider4" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="24.0" prefWidth="100.0" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="simpleton" text="Simpleton">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <fx:reference source="slider5" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="17.0" prefWidth="100.0" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="copykitten" text="Copykitten">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <fx:reference source="slider6" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="25.0" prefWidth="100.0" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="whoknows" text="Whoknows">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <fx:reference source="slider7" />
+                     </children>
+                  </VBox>
+                  <fx:reference source="label11" />
+								<fx:reference source="label21" />
+								<fx:reference source="label31" />
+								<fx:reference source="label41" />
+								<fx:reference source="label51" />
+								<fx:reference source="label61" />
+								<fx:reference source="label71" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </content>
+</Tab>

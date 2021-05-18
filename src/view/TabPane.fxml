@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxWidth="350"  tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.RightpaneController">
+  <tabs>
+    <fx:include source= "Tab1.fxml" fx:id="tab1" />
+    <fx:include source= "Tab2.fxml" fx:id="tab2" />
+       <fx:include source= "Tab3.fxml" fx:id="tab3" />
+    
+  </tabs>
+</TabPane>
